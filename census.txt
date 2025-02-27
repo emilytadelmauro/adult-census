@@ -1,1 +1,10 @@
+import pandas as pd
 
+# Ruta del archivo (usa raw string `r""` para evitar problemas con las barras invertidas)
+file_path = r"\\CNWLUK.LOCAL\USV\USV5\e.sandovaldelmauro\Desktop\Python\adult.csv"
+
+# Cargar el dataset en un DataFrame
+df = pd.read_csv(file_path)
+
+# Mostrar las primeras filas
+print(df.head())
